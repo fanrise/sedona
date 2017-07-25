@@ -6,7 +6,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync');
 
 gulp.task('less', function () {
-  return gulp.src('less/style.less')
+  gulp.src('less/style.less')
     .pipe(plumber())
     .pipe(less())
     .pipe(autoprefixer({

@@ -1,0 +1,32 @@
+.features__sectionFirst {
+  color: @white;
+  background-color: @accent;
+}
+.features__sectionFirst h2{
+  color: @white;
+}
+.features__sectionFirstText {
+  .padding;
+}
+.features__sectionFirst img {
+  display: block;
+  width: 100%;
+  height: 256px;
+  object-fit: cover;
+}
+
+@media @tablet-width {
+  .features__sectionFirst {
+    display: flex;
+  }
+  .features__sectionFirstText {
+    box-sizing: border-box;
+    width: 34%;
+    flex-shrink: 0;
+    align-self: center;
+  }
+  .features__sectionFirst img {
+    min-height: 256px;
+    height: 100%;
+  }
+}
